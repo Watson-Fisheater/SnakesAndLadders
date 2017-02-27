@@ -7,6 +7,7 @@
 //
 
 #import "MenuScreenViewController.h"
+#import "MainGameBoardViewController.h"
 
 @interface MenuScreenViewController ()
 
@@ -36,6 +37,8 @@
 - (IBAction)turnOnOrOffSound:(id)sender {
 }
 - (IBAction)singlePlayerGame:(id)sender {
+    MainGameBoardViewController *mainGameVC = [[MainGameBoardViewController alloc] initWithNibName:@"MainGameBoardViewController" bundle:nil];
+    [self presentViewController:mainGameVC animated:YES completion:nil];
 }
 - (IBAction)twoPlayersGame:(id)sender {
 }

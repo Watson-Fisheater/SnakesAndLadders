@@ -17,5 +17,15 @@ typedef NS_ENUM(NSInteger, BodyMoitonType){
     BodyMoitonTypeCelebrate = 3
 };
 
+typedef NS_ENUM(NSInteger, BonusType) {
+    BonusTypeNone = 0,
+    BonusTypeLadderUp = 1,
+    BonusTypeSnakeDown = 2,
+    BonusTypeStrawberry = 3
+};
+
+#define StepSize_10_10 30.0
+#define StepSize_8_8 40.0
+
 #endif /* CommonDefineFile_h */
 

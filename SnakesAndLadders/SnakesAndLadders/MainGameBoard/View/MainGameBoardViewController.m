@@ -22,6 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     gameBoardViewRect = self.gameBoardView.frame;
+    NSLog(@"(%lf, %lf, %lf, %lf)", gameBoardViewRect.origin.x, gameBoardViewRect.origin.y, gameBoardViewRect.size.width, gameBoardViewRect.size.height );
 }
 
 - (void)didReceiveMemoryWarning {

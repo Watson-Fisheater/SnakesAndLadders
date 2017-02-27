@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B477D811E640BA500250CDA /* BonusDesign.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B477D801E640BA500250CDA /* BonusDesign.plist */; };
 		4B602A521E61B2E1004B1EB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B602A511E61B2E1004B1EB8 /* main.m */; };
 		4B602A551E61B2E1004B1EB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B602A541E61B2E1004B1EB8 /* AppDelegate.m */; };
 		4B602A581E61B2E1004B1EB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B602A571E61B2E1004B1EB8 /* ViewController.m */; };
@@ -21,6 +22,7 @@
 		4B602A9C1E61BCF1004B1EB8 /* MenuScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B602A9A1E61BCF1004B1EB8 /* MenuScreenViewController.xib */; };
 		4B8A1FD01E62B426006E135E /* MainGameBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A1FCE1E62B426006E135E /* MainGameBoardViewController.m */; };
 		4B8A1FD11E62B426006E135E /* MainGameBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B8A1FCF1E62B426006E135E /* MainGameBoardViewController.xib */; };
+		4B8A1FD41E62F4B0006E135E /* GameBoardCalculationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A1FD31E62F4B0006E135E /* GameBoardCalculationModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B477D801E640BA500250CDA /* BonusDesign.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BonusDesign.plist; sourceTree = "<group>"; };
 		4B602A4D1E61B2E1004B1EB8 /* SnakesAndLadders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnakesAndLadders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B602A511E61B2E1004B1EB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4B602A531E61B2E1004B1EB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 		4B8A1FCD1E62B426006E135E /* MainGameBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainGameBoardViewController.h; sourceTree = "<group>"; };
 		4B8A1FCE1E62B426006E135E /* MainGameBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainGameBoardViewController.m; sourceTree = "<group>"; };
 		4B8A1FCF1E62B426006E135E /* MainGameBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainGameBoardViewController.xib; sourceTree = "<group>"; };
+		4B8A1FD21E62F4B0006E135E /* GameBoardCalculationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBoardCalculationModel.h; sourceTree = "<group>"; };
+		4B8A1FD31E62F4B0006E135E /* GameBoardCalculationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoardCalculationModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B477D7F1E640B7400250CDA /* DataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4B477D801E640BA500250CDA /* BonusDesign.plist */,
+			);
+			path = DataFiles;
+			sourceTree = "<group>";
+		};
 		4B602A441E61B2E1004B1EB8 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +135,7 @@
 				4B602A861E61B77A004B1EB8 /* GameResultScreen */,
 				4B602A891E61B77A004B1EB8 /* MainGameBoard */,
 				4B602A8C1E61B77A004B1EB8 /* MenuScreen */,
+				4B477D7F1E640B7400250CDA /* DataFiles */,
 				4B602A531E61B2E1004B1EB8 /* AppDelegate.h */,
 				4B602A541E61B2E1004B1EB8 /* AppDelegate.m */,
 				4B602A561E61B2E1004B1EB8 /* ViewController.h */,
@@ -200,6 +214,8 @@
 			children = (
 				4B602A951E61B9EB004B1EB8 /* CharactorModel.h */,
 				4B602A961E61B9EB004B1EB8 /* CharactorModel.m */,
+				4B8A1FD21E62F4B0006E135E /* GameBoardCalculationModel.h */,
+				4B8A1FD31E62F4B0006E135E /* GameBoardCalculationModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -355,6 +371,7 @@
 				4B602A9C1E61BCF1004B1EB8 /* MenuScreenViewController.xib in Resources */,
 				4B602A5D1E61B2E1004B1EB8 /* Assets.xcassets in Resources */,
 				4B602A5B1E61B2E1004B1EB8 /* Main.storyboard in Resources */,
+				4B477D811E640BA500250CDA /* BonusDesign.plist in Resources */,
 				4B8A1FD11E62B426006E135E /* MainGameBoardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8A1FD41E62F4B0006E135E /* GameBoardCalculationModel.m in Sources */,
 				4B602A941E61B9D0004B1EB8 /* CharactorView.m in Sources */,
 				4B602A971E61B9EB004B1EB8 /* CharactorModel.m in Sources */,
 				4B602A581E61B2E1004B1EB8 /* ViewController.m in Sources */,
