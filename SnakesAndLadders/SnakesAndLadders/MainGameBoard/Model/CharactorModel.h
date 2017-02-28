@@ -14,6 +14,9 @@
 @property (weak, nonatomic) UIView *bodyView;
 @property (assign, nonatomic) NSTimeInterval duration;
 
+@property (assign, nonatomic) int currentStep;
+//
+
 
 -(void)startBodyMotion:(BodyMoitonType)motionType view:(UIView *)view duration:(NSTimeInterval)duration;
 -(void)stopBodyMotion;

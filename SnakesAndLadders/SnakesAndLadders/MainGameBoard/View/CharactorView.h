@@ -16,8 +16,8 @@
 @property (retain, nonatomic) CharactorModel *charactorModel;
 
 
--(instancetype)initWithCenter:(CGPoint)center;
 
+//-(void)moveFromPosition:(CGPoint)fromPos toPosition:(CGPoint)toPos duration:(NSTimeInterval)duration;
+-(void)moveToStep:(int)stepIndex bonusType:(BonusType)bonusType duration:(NSTimeInterval)duration;
 
--(void)moveFromPosition:(CGPoint)fromPos toPosition:(CGPoint)toPos duration:(NSTimeInterval)duration;
 @end

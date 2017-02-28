@@ -25,4 +25,5 @@
 
 +(instancetype)sharedInstance:(CGRect)gameBoardRect;
 
+-(CGPoint)getStepCenterForIndex:(int)index;
 @end

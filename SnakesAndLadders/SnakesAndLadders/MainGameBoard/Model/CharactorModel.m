@@ -13,21 +13,28 @@
     NSTimer *bodyMotionTimer;
 }
 
+-(instancetype)init
+{
+    self = [super init];
+    self.currentStep = 0;
+    return self;
+}
+
 -(void)startBodyMotion:(BodyMoitonType)motionType view:(id)view duration:(NSTimeInterval)duration
 {
     self.bodyView = view;
     self.duration = duration;
     switch (motionType) {
-        case BodyMoitonTypeGo:
+        case BodyMotionTypeGo:
             [self goBodyMotion];
             break;
-        case BodyMoitonTypeFall:
+        case BodyMotionTypeFall:
             [self fallBodyMotion];
             break;
-        case BodyMoitonTypeShake:
+        case BodyMotionTypeShake:
             [self shakeBodyMotion];
             break;
-        case BodyMoitonTypeCelebrate:
+        case BodyMotionTypeCelebrate:
             [self celebrateBodyMotion];
             break;
             

@@ -64,7 +64,7 @@ static GameBoardCalculationModel *_sharedInstance;
             yChange = 0;
         }else if (index == 10 || index == 20 || index == 30 || index == 40 || index == 50 || index == 60 || index == 70 || index == 80 || index == 90){
             xChange = 0;
-            yChange = 30;
+            yChange = -30;
         }else if ((index >= 11 && index < 20) ||
                   (index >= 31 && index < 40) ||
                   (index >= 51 && index < 60) ||
@@ -120,6 +120,12 @@ static GameBoardCalculationModel *_sharedInstance;
     NSDictionary *stepInfo = [[bonusDesignInfo objectForKey:@"10*10"] objectAtIndex:index];
     
     return [stepInfo[@"destinationIndex"] intValue];
+}
+
+-(CGPoint)getStepCenterForIndex:(int)index
+{
+    StepInfo *infoObject = self.stepArray[index];
+    return infoObject.center;
 }
 
 @end

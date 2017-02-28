@@ -27,6 +27,30 @@
                         <constraint firstAttribute="height" constant="300" id="xTk-Th-pzE"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEy-pO-3LO">
+                    <rect key="frame" x="38" y="110" width="73" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="testing: go"/>
+                    <connections>
+                        <action selector="testingGo:" destination="-1" eventType="touchUpInside" id="uaF-07-FNX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrR-re-UoF">
+                    <rect key="frame" x="29" y="172" width="119" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="testing: ladderUp"/>
+                    <connections>
+                        <action selector="testingLadderUp:" destination="-1" eventType="touchUpInside" id="8uV-I0-Oz1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCZ-gA-wdO">
+                    <rect key="frame" x="29" y="223" width="137" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="testing: snake down"/>
+                    <connections>
+                        <action selector="testingSnakeDown:" destination="-1" eventType="touchUpInside" id="Fs1-IN-5fT"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>

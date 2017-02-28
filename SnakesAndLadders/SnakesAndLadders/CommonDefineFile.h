@@ -11,10 +11,11 @@
 
 #import <Foundation/Foundation.h>
 typedef NS_ENUM(NSInteger, BodyMoitonType){
-    BodyMoitonTypeGo = 0,
-    BodyMoitonTypeFall = 1,
-    BodyMoitonTypeShake = 2,
-    BodyMoitonTypeCelebrate = 3
+    BodyMotionTypeNone = 0,
+    BodyMotionTypeGo = 1,
+    BodyMotionTypeFall = 2,
+    BodyMotionTypeShake = 3,
+    BodyMotionTypeCelebrate = 4
 };
 
 typedef NS_ENUM(NSInteger, BonusType) {
